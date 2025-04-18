@@ -6,9 +6,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>chroma</h1>
-    <nav>
+  <header class="header-container">
+    <h1 class="titulo">chroma</h1>
+    <button onclick="document.body.classList.toggle('dark')" class="troca-cor">Muda tema</button>
+    <nav class="nav-container">
       <a href="#">Início</a>
       <a href="#">Produtos</a>
       <a href="#">Contato</a>
@@ -44,7 +45,7 @@
         <button onclick="comprar('Calça legging')">Comprar</button>
       </div>
   </section>
-  <footer>
+  <footer class="footer-container">
     <h2>Contato</h2>
 
   </footer>
