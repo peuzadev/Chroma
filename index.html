@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>Chroma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHROMA</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="header-container">
-    <h1 class="titulo">chroma</h1>
-    <button onclick="document.body.classList.toggle('dark')" class="troca-cor">Muda tema</button>
-    <nav class="nav-container">
-      <a href="#">Início</a>
-      <a href="#">Produtos</a>
-      <a href="#">Contato</a>
+  <header class="header">
+    <div class="header__content">
+      <h1 class="header__title">CHROMA COMPANY</h1>
+      <button class="header__toggle-theme" onclick="document.body.classList.toggle('dark')">MUDAR TEMA</button>
+    </div>
+    <nav class="nav">
+      <a href="#" class="nav__link">Início</a>
+      <a href="#" class="nav__link">Produtos</a>
+      <a href="#" class="nav__link">Contato</a>
     </nav>
   </header>
 
-  <section class="produtos">
-    <div class="produto">
-        <h2>Camiseta Branca</h2>
-      <img src="img/camisa branca.png" alt="Camiseta Branca" width="100px" height="100px">
-      <p>R$ 49,90</p>
-      <button onclick="comprar('Camiseta Branca')">Comprar</button>
-    </div>
+  <main class="main">
+    <section class="products">
+      <article class="product">
+        <h2 class="product__title">Camiseta Branca</h2>
+        <img src="img/camisa branca.png" alt="Camiseta Branca" class="product__image" width="100" height="100">
+        <p class="product__price">R$ 49,90</p>
+        <button class="product__buy-button" onclick="comprar('Camiseta Branca')">Comprar</button>
+      </article>
 
-    <div class="produto">
-        <h2>Calça Jeans</h2>
-      <img src="img/OIP.jpg" alt="Calça Jeans" width="100px" height="100px">
-      <p>R$ 119,90</p>
-      <button onclick="comprar('Calça Jeans')">Comprar</button>
-    </div>
+      <article class="product">
+        <h2 class="product__title">Calça Jeans</h2>
+        <img src="img/OIP.jpg" alt="Calça Jeans" class="product__image" width="100" height="100">
+        <p class="product__price">R$ 119,90</p>
+        <button class="product__buy-button" onclick="comprar('Calça Jeans')">Comprar</button>
+      </article>
 
-    <div class="produto">
-        <h2>Camisa preta</h2>
-        <img src="img/CAMISETA-PRETA.webp" alt="Camisa preta" width="100px" height="100px">
-        <p>R$ 49,90</p>
-        <button onclick="comprar('Camisa preta')">Comprar</button>
-      </div>
+      <article class="product">
+        <h2 class="product__title">Camisa Preta</h2>
+        <img src="img/CAMISETA-PRETA.webp" alt="Camisa Preta" class="product__image" width="100" height="100">
+        <p class="product__price">R$ 49,90</p>
+        <button class="product__buy-button" onclick="comprar('Camisa preta')">Comprar</button>
+      </article>
 
-      <div class="produto">
-        <h2>Calça jeans preta</h2>
-        <img src="img/calça preta.jpg" alt="Calça Jeans preta" width="100px" height="100px">
-        <p>R$ 99,90</p>
-        <button onclick="comprar('Calça legging')">Comprar</button>
-      </div>
-  </section>
-  <footer class="footer-container">
-    <h2>Contato</h2>
+      <article class="product">
+        <h2 class="product__title">Calça Jeans Preta</h2>
+        <img src="img/calça preta.jpg" alt="Calça Jeans Preta" class="product__image" width="100" height="100">
+        <p class="product__price">R$ 99,90</p>
+        <button class="product__buy-button" onclick="comprar('Calça jeans preta')">Comprar</button>
+      </article>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <section class="footer__contact">
+      <h2>Contato</h2>
+      <p>chromacmpny@gmail.com</p>
+
+    </section>
   </footer>
-
 
   <script src="script.js"></script>
 </body>
+
 </html>
