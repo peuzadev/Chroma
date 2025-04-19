@@ -25,16 +25,19 @@
         <li><a href="#secao-destaques">Destaques</a></li>
       </ul>
     </nav>
-  
-    <div class="search-bar">
-      <input type="text" placeholder="Procure produtos..." />
-    </div>
-  
+      <input type="text" placeholder="Procure produtos..." class="search-bar" id="search-bar"/>
     <div class="icons">
       <a href="#"><img src="img/Desktop/Pag.Home/icons/icon-perfil.png" alt="Usuário" /></a>
       <a href="#"><img src="img/Desktop/Pag.Home/icons/icon-carrinho.png" alt="Carrinho" /></a>
     </div>
-  
+    <button class="troca-tema" id="troca-tema" aria-label="Alternar tema" onclick="temas()">
+      <svg id="sol-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 4.5a1 1 0 011-1h0a1 1 0 110 2h0a1 1 0 01-1-1zm6.364 2.636a1 1 0 011.414 0h0a1 1 0 01-1.414 1.414h0a1 1 0 010-1.414zm-12.728 0a1 1 0 010 1.414h0a1 1 0 01-1.414-1.414h0a1 1 0 011.414 0zm14.114 6.364a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zm-16 0a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zm12.728 6.364a1 1 0 010-1.414h0a1 1 0 011.414 1.414h0a1 1 0 01-1.414 0zm-12.728 0a1 1 0 011.414-1.414h0a1 1 0 010 1.414h0a1 1 0 01-1.414 0zM12 19.5a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zM12 7a5 5 0 100 10 5 5 0 000-10z"/>
+      </svg>
+      <svg id="lua-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
   </header>
 
   <main id="parte-principal">
@@ -50,16 +53,16 @@
       <article id="detalhes-produto">
         <h2>One Life Graphic T-shirt</h2>
         <p> ⭐⭐⭐⭐ 4.0/5</p>
-        <p>R$120</p>
+        <p id="valor">Selecione um tamanho para ver seu valor</p>
         <p>Esta graphic t-shirt é perfeita para qualquer ocasião Confeccionada em tecido
           macio e respirável, oferece conforto e estilo superiores.</p>
 
         <p>Selecione as cores:</p>
-        <input type="radio" name="cor" id="verde" value="Verde">
+        <input type="radio" name="cor" id="verde" value="Verde" required>
         <label for="verde">Verde</label>
-        <input type="radio" name="cor" id="azul" value="Azul">
+        <input type="radio" name="cor" id="azul" value="Azul" required>
         <label for="azul">Azul</label>
-        <input type="radio" name="cor" id="preto" value="Preto">
+        <input type="radio" name="cor" id="preto" value="Preto" required>
         <label for="preto">Preto</label>
 
         <p>Escolha o tamanho:</p>
@@ -67,14 +70,44 @@
         <label for="p">P</label>
         <input type="radio" name="tamanho" id="m" value="M">
         <label for="m">M</label>
-        <input type="radio" name="tamanho" id="g" value="G" checked>
+        <input type="radio" name="tamanho" id="g" value="G" >
         <label for="g">G</label>
         <input type="radio" name="tamanho" id="gg" value="GG">
         <label for="gg">GG</label>
 
         <p>Quantidade:</p>
-        <input type="number" value="1" min="1">
-        <button>Adicionar ao carrinho</button>
+        <input type="number" value="1" min="1" id="Quantidade">
+        <button onclick="atualizaPreco()">Adicionar ao carrinho</button>
+        <script>
+          // Preços para cada tamanho
+          const precos = {
+              P: 90,
+              M: 100,
+              G: 110,
+              GG: 120
+          };
+           const input = document.getElementById("Quantidade");
+           const numero = input.value;
+          function atualizaPreco() {
+            const quant = parseInt(input.value); 
+              const selecionado = document.querySelector('input[name="tamanho"]:checked');
+              
+              if (selecionado) {
+                  const tamanho = selecionado.value;
+                  
+                  const preco = precos[tamanho];
+                  const precoFinal = preco * quant;
+
+                  document.getElementById('valor').textContent = `O preço total foi: ${precoFinal}`;
+                  
+                  
+              }
+          }
+  
+            
+  
+          window.addEventListener('DOMContentLoaded', atualizaPreco);
+      </script>
       </article>
 
     </section>
@@ -85,7 +118,7 @@
       <h3>Fique atualizado sobre nossas últimas ofertas</h3>
       <form>
         <input type="email" placeholder="Digite seu e-mail" required>
-        <button type="submit">Assinar</button>
+        <button type="submit" id="envio-email" onclick="alertEmail()">Assinar</button>
       </form>
   </section>
   </fieldset>

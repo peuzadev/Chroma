@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alike&family=Almarai:wght@300;400;700;800&family=Anek+Telugu:wght@100..800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
+    color: black;
+}
+
+a {
     color: black;
 }
 
@@ -9,3 +17,79 @@ body.dark {
     background-color: black;
     color: white;
 }
+
+body.dark a {
+    color: white;
+}
+
+.logo {
+    font-family: Almarai;
+    margin-left: 15px;
+    font-size: x;
+}
+
+header {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-item {
+    border-radius: 25px;
+    font-size: large;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: Alike;
+    height: 30px;
+    gap: 25px;
+    width: 60px;
+    transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+ul li a:hover {
+    background-color: rgba(187, 183, 183, 0.959);
+    transform: scale(1.04);
+}
+
+body.dark ul li a:hover {
+    background-color: rgb(136, 134, 134);
+    transform: scale(1.04);
+}
+
+.search-bar {
+    width: 40%;
+    border-radius: 20px;
+    height: 25px;
+    padding-left: 15px;
+}
+
+svg {
+    width: 30px;
+    height: 30px;
+    fill: currentColor;
+    transition: transform 0.4s;
+  }
+
+  .troca-tema {
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    transition: 1s;
+  }
+
+  body.dark .troca-tema {
+    color: white;
+  }
