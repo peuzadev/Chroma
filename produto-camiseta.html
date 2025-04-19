@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CHROMA COMPANY</title>
-  <link rel="stylesheet" href="Chroma.css">
+  <link rel="stylesheet" href="cssCamiseta/Camiseta.css">
   <link rel="shortcut icon" href="img/Logo/favicon.ico" type="image/x-icon">
+  <script src="jsCamiseta/scriptCamiseta.js"></script>
 </head>
 
 <body>
@@ -78,36 +79,7 @@
         <p>Quantidade:</p>
         <input type="number" value="1" min="1" id="Quantidade">
         <button onclick="atualizaPreco()">Adicionar ao carrinho</button>
-        <script>
-          // Preços para cada tamanho
-          const precos = {
-              P: 90,
-              M: 100,
-              G: 110,
-              GG: 120
-          };
-           const input = document.getElementById("Quantidade");
-           const numero = input.value;
-          function atualizaPreco() {
-            const quant = parseInt(input.value); 
-              const selecionado = document.querySelector('input[name="tamanho"]:checked');
-              
-              if (selecionado) {
-                  const tamanho = selecionado.value;
-                  
-                  const preco = precos[tamanho];
-                  const precoFinal = preco * quant;
-
-                  document.getElementById('valor').textContent = `O preço total foi: ${precoFinal}`;
-                  
-                  
-              }
-          }
-  
-            
-  
-          window.addEventListener('DOMContentLoaded', atualizaPreco);
-      </script>
+      
       </article>
 
     </section>
