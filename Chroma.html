@@ -11,25 +11,28 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <h2>CHROMA</h2>
-    </div>
+      <h2 class="logo">CHROMA</h2>
     <nav>
-      <ul>
-        <li><a href="#menuinicial">Comprar</a></li>
-        <li><a href="#secao-lancamentos">Lançamentos</a></li>
-        <li><a href="#secao-destaques">Destaques</a></li>
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="#menuinicial" class="nav-item">Comprar</a></li>
+        <li class="nav-list-item"><a href="#secao-lancamentos" class="nav-item">Lançamentos</a></li>
+        <li class="nav-list-item"><a href="#secao-destaques" class="nav-item">Destaques</a></li>
       </ul>
     </nav>
-
-    <div class="search-bar">
-      <input type= "text"placeholder="Procure produtos..." />
-    </div>
-
+      <input type= "text"placeholder="Procure produtos..." class="search-bar" id="search-bar"/>
+      <button type="submit"></button>
     <div class="icons">
       <a href="#"><img src="img/Desktop/Pag.Home/icons/icon-perfil.png" alt="Usuário" /></a>
       <a href="#"><img src="img/Desktop/Pag.Home/icons/icon-carrinho.png" alt="Carrinho" /></a>
     </div>
+    <button class="troca-tema" id="troca-tema" aria-label="Alternar tema" onclick="temas()">
+      <svg id="sol-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 4.5a1 1 0 011-1h0a1 1 0 110 2h0a1 1 0 01-1-1zm6.364 2.636a1 1 0 011.414 0h0a1 1 0 01-1.414 1.414h0a1 1 0 010-1.414zm-12.728 0a1 1 0 010 1.414h0a1 1 0 01-1.414-1.414h0a1 1 0 011.414 0zm14.114 6.364a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zm-16 0a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zm12.728 6.364a1 1 0 010-1.414h0a1 1 0 011.414 1.414h0a1 1 0 01-1.414 0zm-12.728 0a1 1 0 011.414-1.414h0a1 1 0 010 1.414h0a1 1 0 01-1.414 0zM12 19.5a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zM12 7a5 5 0 100 10 5 5 0 000-10z"/>
+      </svg>
+      <svg id="lua-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
 </header>
     <section id="menuinicial">
       <div class="menuinicialtexto">
@@ -225,8 +228,8 @@
       <div class="newsletter-conteudo">
         <h3 class="newsletter-titulo">Fique atualizado sobre nossas últimas ofertas</h3>
         <form class="newsletter-form">
-          <input type="email" placeholder="Digite seu endereço de e-mail" class="campo-email" required>
-          <button type="submit" class="botao-assinar">Assinar</button>
+          <input type="email" placeholder="Digite seu endereço de e-mail" class="campo-email" id="email-campo" required>
+          <button type="submit" class="botao-assinar" id="envio-email" onclick="alertEmail()">Assinar</button>
         </form>
       </div>
     </section>

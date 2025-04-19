@@ -6,6 +6,7 @@
     <title>CHROMA COMPANY</title>
     <link rel="stylesheet" href="Chroma.css">
     <link rel="shortcut icon" href="img/Logo/favicon.ico" type="image/x-icon">
+    <script src="Chroma.js"></script>
 </head>
 
 <body>
@@ -25,16 +26,20 @@
                 <li><a href="#secao-destaques">Destaques</a></li>
             </ul>
         </nav>
-    
-        <div class="search-bar">
-            <input type="text" placeholder="Procure produtos..." />
-        </div>
+            <input type="text" placeholder="Procure produtos..." class="search-bar" id="search-bar" />
     
         <div class="icons">
             <a href="#"><img src="img/Desktop/Pag.Home/icons/icon-perfil.png" alt="Usuário" /></a>
             <a href="#"><img src="img/Desktop/Pag.Home/icons/icon-carrinho.png" alt="Carrinho" /></a>
         </div>
-
+        <button class="troca-tema" id="troca-tema" aria-label="Alternar tema" onclick="temas()">
+            <svg id="sol-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 4.5a1 1 0 011-1h0a1 1 0 110 2h0a1 1 0 01-1-1zm6.364 2.636a1 1 0 011.414 0h0a1 1 0 01-1.414 1.414h0a1 1 0 010-1.414zm-12.728 0a1 1 0 010 1.414h0a1 1 0 01-1.414-1.414h0a1 1 0 011.414 0zm14.114 6.364a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zm-16 0a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zm12.728 6.364a1 1 0 010-1.414h0a1 1 0 011.414 1.414h0a1 1 0 01-1.414 0zm-12.728 0a1 1 0 011.414-1.414h0a1 1 0 010 1.414h0a1 1 0 01-1.414 0zM12 19.5a1 1 0 011 1h0a1 1 0 11-2 0h0a1 1 0 011-1zM12 7a5 5 0 100 10 5 5 0 000-10z"/>
+            </svg>
+            <svg id="lua-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+            </svg>
+          </button>
     </header>
 
     <main id="parte-principal">
@@ -48,7 +53,7 @@
             <article id="detalhes-produto">
                 <h2>Jeans Pants</h2>
                 <p> ⭐⭐⭐⭐⭐ 5.0/5</p>
-                <p>R$120</p>
+                <p id="txt"></p>
                 <p>Descubra o jeans azul perfeito para todas as ocasiões!
                 Confortável, versátil e com o caimento ideal, nosso jeans é feito com tecido de alta qualidade e toque macio, oferecendo
                 liberdade de movimento e estilo em qualquer momento do dia..</p>
@@ -60,17 +65,17 @@
                
 
                 <p>Escolha o tamanho:</p>
-                <input type="radio" name="tamanho" id="p" value="P">
+                <input type="radio" name="tamanho" id="p" value="tamanho40">
                 <label for="p">40</label>
-                <input type="radio" name="tamanho" id="m" value="M">
+                <input type="radio" name="tamanho" id="m" value="tamanho42">
                 <label for="m">42</label>
-                <input type="radio" name="tamanho" id="g" value="G" checked>
+                <input type="radio" name="tamanho" id="g" value="tamanho44" checked>
                 <label for="g">44</label>
-                <input type="radio" name="tamanho" id="gg" value="GG">
+                <input type="radio" name="tamanho" id="gg" value="tamanho46">
                 <label for="gg">46</label>
                 <p>Quantidade:</p>
-                <input type="number" value="1" min="1">
-                <button>Adicionar ao carrinho</button>
+                <input type="number" value="1" min="1" id="quantidadeCalça">
+                <button onclick="atualizaPreco()">Adicionar ao carrinho</button>
             </article>
 
         </section>
@@ -81,7 +86,7 @@
             <h3>Fique atualizado sobre nossas últimas ofertas!</h3>
             <form>
                 <input type="email" placeholder="Digite seu e-mail" required>
-                <button type="submit">Assinar</button>
+                <button type="submit" id="envio-email" onclick="alertEmail()">Assinar</button>
             </form>
     </section>
     </fieldset>
