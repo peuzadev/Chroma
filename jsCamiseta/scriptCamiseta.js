@@ -1,23 +1,33 @@
-const precos = {
-    P: 30,
-    M: 35,
-    G: 40,
-    GG: 45
-  };
+const precos = [120, 130, 140, 145]; // P, M, G, GG
 
-const input = document.getElementById("quantidadeCamiseta");
-const numero = input.value;
-function atualizaPreco() {
-  const quantidade = parseInt(input.value);
-  const selecionado = document.querySelector('input[name="tamanho"]:checked');
-  if (selecionado) {
-    const tamanhoCamiseta = selecionado.value;
-    const preco = precos[tamanhoCamiseta];
-    const precoFinal = preco * quantidade;
-    document.getElementById("txt").textContent = `O preço Final foi: ${preçoFinal}`;
-  }
-  }
+  function atualizaPreco() {
+    const tamanhoSelecionado = document.querySelector('input[name="tamanho"]:checked');
+    const quantidade = parseInt(document.getElementById("Quantidade").value, 10);
+    const valorElemento = document.getElementById("valor");
 
+    if (!tamanhoSelecionado) {
+      valorElemento.textContent = "Por favor, selecione um tamanho.";
+      return;
+    }
+
+    if (isNaN(quantidade) || quantidade <= 0) {
+      valorElemento.textContent = "Por favor, insira uma quantidade válida.";
+      return;
+    }
+
+    const precoUnitario = precos[parseInt(tamanhoSelecionado.value)];
+    const precoFinal = precoUnitario * quantidade;
+    const cor = document.querySelector('input[name="cor"]:checked');
+    const corReal = cor.value;
+
+    if (quantidade == 1) {
+      valorElemento.textContent = `Preço total da camisa ${corReal}: R$ ${precoFinal.toFixed(2)}`;
+    }
+
+    else if (quantidade > 1) {
+      valorElemento.textContent = `Preço total das camisas: R$ ${precoFinal.toFixed(2)}`;
+    }
+  }
   // botao troca tema
 const botao = document.getElementById("troca-tema")
 const solIcon = document.getElementById("sol-icon")

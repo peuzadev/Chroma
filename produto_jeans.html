@@ -53,15 +53,17 @@
             <article id="detalhes-produto">
                 <h2>Jeans Pants</h2>
                 <p> ⭐⭐⭐⭐⭐ 5.0/5</p>
-                <p id="txt"></p>
+                <p id="valorCalca"></p>
                 <p>Descubra o jeans azul perfeito para todas as ocasiões!
                 Confortável, versátil e com o caimento ideal, nosso jeans é feito com tecido de alta qualidade e toque macio, oferecendo
                 liberdade de movimento e estilo em qualquer momento do dia..</p>
 
                 <p>Selecione as cores:</p>
             
-                <input type="radio" name="cor" id="azul" value="Azul">
+                <input type="radio" name="cor" id="azul" value="Azul"  checked>
                 <label for="azul">Azul</label>
+                <input type="radio" name="cor" id="preta" value="Preta">
+                <label for="preta">Preta</label>
                
 
                 <p>Escolha o tamanho:</p>
@@ -75,7 +77,7 @@
                 <label for="gg">46</label>
                 <p>Quantidade:</p>
                 <input type="number" value="1" min="1" id="quantidadeCalça">
-                <button onclick="atualizaPreco()">Adicionar ao carrinho</button>
+                <button onclick="atualizaPrecoCalca()">Adicionar ao carrinho</button>
             </article>
 
         </section>
