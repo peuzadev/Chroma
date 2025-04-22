@@ -119,8 +119,10 @@ svg {
     align-items: center;
   }
 
-  .img{
+  #img{
     margin-right: 20px;
+    margin-left: 350px;
+     
   }
 
   .div-stats {
@@ -146,3 +148,23 @@ svg {
 #margem-botao {
     margin-top: 50px;
 }
+
+#bannerchroma{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+}
+
+
+#chroma1{
+    margin-right: 30px;
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 25px 80px ;
+    font-family: Almarai; 
+    font-size: 35px ;
+}
+
