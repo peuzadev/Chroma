@@ -24,7 +24,7 @@ body.dark a {
 
 .logo {
     font-family: Almarai;
-    margin-left: 15px;
+    margin-left: 70px;
     font-size: x;
 }
 
@@ -93,3 +93,78 @@ svg {
   body.dark .troca-tema {
     color: white;
   }
+
+  #h1menu {
+  font-size:70px;
+  width: 650px;
+  max-width:none;
+  font-family: Almarai;
+  font-weight: bold;
+  
+  }
+  .paragrafomenu{
+    width: 600px;
+    font-family: Almarai;
+    font-weight: lighter;
+  }
+
+  .container {
+    display:flex; 
+    align-items: center;
+    margin-left: 70px;
+  }
+
+  .container-estatisticas {
+    display: flex;
+    align-items: center;
+  }
+
+  #img{
+    margin-right: 20px;
+    margin-left: 350px;
+     
+  }
+
+  .div-stats {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Almarai;
+    font-weight: lighter;
+  }
+
+  .div-stats h1{
+    font-weight: bold;
+  }
+
+.botao-comprar {
+    background-color: black;
+    border: 3px;
+    border-radius: 27px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+#margem-botao {
+    margin-top: 50px;
+}
+
+#bannerchroma{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+}
+
+
+#chroma1{
+    margin-right: 30px;
+    text-align: center;
+    margin-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 25px 80px ;
+    font-family: Almarai; 
+    font-size: 35px ;
+}
+

@@ -24,7 +24,7 @@ const precos = {
         elementoResultado.textContent = "Preço não encontrado para o tamanho selecionado.";
       }
     } else {
-      elementoResultado.textContent = "";
+      elementoResultado.textContent = "Selecione um tamanho.";
     }
   }
   radiosTamanho.forEach(radio => {

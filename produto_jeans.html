@@ -58,8 +58,10 @@
 
                 <p>Selecione as cores:</p>
             
-                <input type="radio" name="cor" id="azul" value="Azul">
+                <input type="radio" name="cor" id="azul" value="Azul"  checked>
                 <label for="azul">Azul</label>
+                <input type="radio" name="cor" id="preta" value="Preta">
+                <label for="preta">Preta</label>
                
 
                 <p>Escolha o tamanho:</p>
@@ -73,8 +75,10 @@
                 <label for="gg">46</label>
                 <p>Quantidade:</p>
                 <input type="number" value="1" min="1" id="quantidadeCalça">
+
                 <button onclick="atualizaPreco()">Adicionar ao carrinho</button>
                 <p id="txt">O preço total é <span id="valor-total"></span></p>
+                <button onclick="atualizaPrecoCalca()">Adicionar ao carrinho</button>
             </article>
 
         </section>

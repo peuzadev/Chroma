@@ -1,3 +1,4 @@
+
 window.onload = function(){
 
 const precos = {
@@ -34,7 +35,7 @@ const precos = {
     radio.addEventListener("change", atualizaPreco);
   });
   inputQuantidade.addEventListener("input", atualizaPreco);
-  atualizaPreco();}
+  atualizaPreco()}
 
 
 const botao = document.getElementById("troca-tema")
