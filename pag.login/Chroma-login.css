@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Almarai:wght@300;400;700;800&family=Anek+Telugu:wght@100..800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+}
+
+aside{
+    width: 50%;
+}
+
+aside > img {
+    width: 100%;
+}
+
+section {
+    width: 50%;
+}
+
+#logo {
+    font-family: anek telugu;
+    font-size: 5rem;
+    font-weight: 900;
+    padding-top: 10px;
+    text-align: center;
+    margin: 100px 0 50px ;
+}
+
+#login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#login > h1 {
+    font-family: almarai;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#login > p {
+    font-family: alieke;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+i {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-family: almarai;
+    font-size: 1.2rem;
+}
+
+
+
