@@ -1,3 +1,5 @@
+window.onload = function(){
+
 const precos = {
     tamanho40: 105,
     tamanho42: 115,
@@ -5,21 +7,34 @@ const precos = {
     tamanho46: 135
   };
 
-
-
-const input = document.getElementById("quantidadeCalça");
-const numero = input.value;
-function atualizaPreco() {
-  const quantidade = parseInt(input.value);
-  const selecionado = document.querySelector('input[name="tamanho"]:checked');
-  if (selecionado) {
-    const tamanhoCalça = selecionado.value;
-    const preco = precos[tamanhoCalça];
-    const precoFinal = preco * quantidade;
-    document.getElementById("txt").textContent = `O preço Final foi: ${preçoFinal}`;
+  
+  const inputQuantidade = document.getElementById("quantidadeCalça");
+  const elementoResultado = document.getElementById("valor-total");
+  const radiosTamanho = document.querySelectorAll('input[name="tamanho"]');
+  
+  function atualizaPreco() {
+    const quantidade = parseInt(inputQuantidade.value);
+    const selecionado = document.querySelector('input[name="tamanho"]:checked');
+  
+    if (selecionado) {
+      const tamanhoCalca = selecionado.value;
+      const preco = precos[tamanhoCalca];
+  
+      if (preco !== undefined) {
+        const precoFinal = preco * quantidade;
+        elementoResultado.textContent = ` R$ ${precoFinal.toFixed(2)}`;
+      } else {
+        elementoResultado.textContent = "Preço não encontrado para o tamanho selecionado.";
+      }
+    } else {
+      elementoResultado.textContent = "Selecione um tamanho.";
+    }
   }
-}
-
+  radiosTamanho.forEach(radio => {
+    radio.addEventListener("change", atualizaPreco);
+  });
+  inputQuantidade.addEventListener("input", atualizaPreco);
+  atualizaPreco();}
 
 
 const botao = document.getElementById("troca-tema")
