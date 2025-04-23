@@ -14,7 +14,9 @@ a {
 body {
     height: 100vh;
     display: flex;
-    flex: 1;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* bloqueia rolagem */
 }
 
 aside{
@@ -72,5 +74,25 @@ input {
     font-size: 1.2rem;
 }
 
+
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+}
 
 

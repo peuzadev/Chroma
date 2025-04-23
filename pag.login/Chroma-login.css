@@ -14,7 +14,9 @@ a {
 body {
     height: 100vh;
     display: flex;
-    flex: 1;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* bloqueia rolagem */
 }
 
 aside{
@@ -71,6 +73,8 @@ input {
     font-family: almarai;
     font-size: 1.2rem;
 }
+
+
 
 
 
