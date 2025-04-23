@@ -1,0 +1,170 @@
+[33mcommit 0362452e9714fc59194188bc74b9c9e6509945b3[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: b05a06b baad21d
+Author: kajj606 <palinopsiadesconforto@gmail.com>
+Date:   Sat Apr 19 04:55:39 2025 -0300
+
+    Merge pull request #3 from GabrielOliveiraDev06/kadu-alt
+    
+    melhorei minimamente a nav, coloquei a fonte na logo, fiz o botão de dark mode com animação e tudo e botei um contador de preço na parte da camisa, cooloquei no da calça também ma snão tava funcionando ai me estressei já são 5 da manhã
+
+[33mcommit baad21d5224a6f2ce261a0757290753415a2cf66[m[33m ([m[1;31morigin/kadu-alt[m[33m)[m
+Author: kajj606 <palinopsiadesconforto@gmail.com>
+Date:   Sat Apr 19 04:52:12 2025 -0300
+
+    botei um js
+
+[33mcommit b05a06bb9f2b546e92935f7442c2675a85a1ddb6[m
+Merge: f878613 66f054d
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 22:31:04 2025 -0300
+
+    html
+
+[33mcommit f87861314dfd2fcd765a2efc61d359f046828c92[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 22:19:51 2025 -0300
+
+    pagina_fix3
+
+[33mcommit 5d584d4e647a4017b1db5c4b58915b79dfe1dc85[m[33m ([m[1;31morigin/pagina_fix[m[33m)[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 22:14:18 2025 -0300
+
+    pagina_fix2
+
+[33mcommit 06db5c030948cabe9fb31f8011850eb3aaea125a[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 22:06:21 2025 -0300
+
+    favicons modificados, html pronto
+
+[33mcommit 947d67d2222551b1b32c6d47e6ee62ace33ad55c[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 22:02:49 2025 -0300
+
+    html todo pronto
+
+[33mcommit 6d6edbc6941aa5d7db62c179389b633440cacad4[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 20:43:57 2025 -0300
+
+    mudança no html
+
+[33mcommit 66f054da6152947a7827983eac0802fbab5c4c03[m
+Author: Sekaih07 <danielrmrocha07@gmail.com>
+Date:   Fri Apr 18 19:38:30 2025 -0300
+
+    mudança na pagina da roupa
+
+[33mcommit 937e1daa34096624aa125c8bdba84d43d1cc19e2[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 19:24:49 2025 -0300
+
+    mudança que eu fiz na pagina 1 do nossso site
+
+[33mcommit d23b2b97003d4e6875bc2697e0876a199dc60c82[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Fri Apr 18 19:10:59 2025 -0300
+
+    adiconei os icones na pasta imagem
+
+[33mcommit 9730cd219f2f876146bc7562969cac3c2583e6e1[m
+Author: Vinicius <vinigaga3@gmail.com>
+Date:   Fri Apr 18 18:35:57 2025 -0300
+
+    commitatrasdao
+
+[33mcommit 97f90d34c86ac2878e19e19decd273f15635375f[m
+Author: Sekaih07 <danielrmrocha07@gmail.com>
+Date:   Fri Apr 18 17:54:24 2025 -0300
+
+    pagina da camiseta
+
+[33mcommit 436283c14b5672252abfe9e792b1da286305357c[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Fri Apr 18 16:25:26 2025 -0300
+
+    adicioei as fontes
+
+[33mcommit eeb5ee7db910a853bc6a53c3c70f2ddece1c1e64[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Fri Apr 18 16:16:56 2025 -0300
+
+    atualizei o web designe do site
+
+[33mcommit 52970b9d523bc3fcd326a4a2531122d59308d169[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Fri Apr 18 16:11:13 2025 -0300
+
+    adiconei o design do site
+
+[33mcommit a8023fb47160651ad6bfc8801c43bd95b848f926[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Fri Apr 18 16:07:10 2025 -0300
+
+    adicionei as imagens
+
+[33mcommit 3ac8e1ecf43f3f1178ffb319d968525350ed60fa[m
+Merge: 0ce04ec 4f61966
+Author: kajj606 <palinopsiadesconforto@gmail.com>
+Date:   Thu Apr 17 22:12:30 2025 -0300
+
+    Merge pull request #1 from GabrielOliveiraDev06/kadu-alteração
+    
+    Containers receberam classes e adicionei botão troca tema no html e c…
+
+[33mcommit 4f6196694a3aa6adeaff0fe10f504b2f8c61e8e7[m[33m ([m[1;31morigin/kadu-alteração[m[33m)[m
+Author: kajj606 <palinopsiadesconforto@gmail.com>
+Date:   Thu Apr 17 22:02:07 2025 -0300
+
+    Containers receberam classes e adicionei botão troca tema no html e criei o arquivo no css
+
+[33mcommit 0ce04ec42666acf26722e0f6ab773075f0e358ea[m
+Merge: 5a92956 2b4b163
+Author: Sekaih07 <danielrmrocha07@gmail.com>
+Date:   Thu Apr 17 21:39:40 2025 -0300
+
+    mudança na pagina inicial
+
+[33mcommit 5a929565ad79b8b8c729d44982f3b30a26b7f465[m
+Author: Sekaih07 <danielrmrocha07@gmail.com>
+Date:   Thu Apr 17 21:36:37 2025 -0300
+
+    mudança na pagina inicial
+
+[33mcommit 2b4b1636d69bb7c5fe9d57427b1ea62432e3ebda[m
+Author: kajj606 <palinopsiadesconforto@gmail.com>
+Date:   Thu Apr 17 21:33:45 2025 -0300
+
+    Frustração
+
+[33mcommit 39d3b507262653dbea0b9c7bf0ae1af270d38dc8[m
+Author: peuzadev <strongerpedro83@gmail.com>
+Date:   Thu Apr 17 21:27:44 2025 -0300
+
+    Adicionando arquivo script.js na pasta js
+
+[33mcommit b2fb51bfef2c1c2a119942e4a745b6d456e8bb45[m
+Merge: 5225d5b a1c289d
+Author: Sekaih07 <danielrmrocha07@gmail.com>
+Date:   Thu Apr 17 21:19:35 2025 -0300
+
+    pagina inicial html
+
+[33mcommit 5225d5b09243758ab230ae370f8a66240640c2ad[m
+Author: Sekaih07 <danielrmrocha07@gmail.com>
+Date:   Thu Apr 17 21:04:20 2025 -0300
+
+    pagina inicial
+
+[33mcommit a1c289d5cf19f7f4607916746c5392b672a7ee74[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Thu Apr 17 20:43:42 2025 -0300
+
+    adicionei um arquivo
+
+[33mcommit cb602d09fe80040ee7c2e2f2f8ac19b77a89f7e9[m
+Author: Gabriel <carmooliveiragabriel@gmail.com>
+Date:   Thu Apr 17 20:28:15 2025 -0300
+
+    primeiro commit

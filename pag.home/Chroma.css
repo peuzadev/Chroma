@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Alike&family=Almarai:wght@300;400;700;800&family=Anek+Telugu:wght@100..800&display=swap');
+
+/*Tirando o padding e margin padrão de todos os elementos para, acho melhor para saber quanto da tela cada elemento ocupa sem caucular margem e padding, defino cada um manuamente*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Limitando a largura dos containers principais a 80% da tela e alinhando horizontalmete independente da largura da tela*/
+section , header {
+    max-width: 80%;
+    margin: auto;
+}
+
+/*caracteristica padrão dos links*/
+a {
+    text-decoration: none;
+    font-family: almarai;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+#promo {
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    padding: 10px;
+}
+
+/*carcteristica padrão de todos os links dentro da promo*/
+#promo > a {
+    color: white;
+    font-weight: 300;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 30px;
+}
+
+#nav > #navLeft {
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLeft > #logo {
+    font-family: anek telugu;
+    font-size: 30pt;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+#navLeft > ul {
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+}
+
+
+
+
+#navLeft > ul > li > a {
+    font-family: alike;
+}
+
+#input-lupa {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 999px; 
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media (max-width: 440px) {
+    #input-lupa {
+        display: none;
+    }
+}
+
+#input-lupa i {
+    color: #888;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#input-lupa input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+
+#navRigth {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#navmobile {
+    display: none;
+}
+
+/*Nav Mobile*/
+@media (max-width: 790px) {
+
+    /* Quado a ul tiver a classe open */
+    #navLeft > .open {
+        display: grid;
+        position: absolute;
+        right:4%;
+        top: 6%;
+        transition: 0.3s;
+    }
+
+    #navLeft > ul > li > a {
+        color: white;
+    }
+
+
+    /* Quado a ul não tiver a classe open */
+    #navLeft > ul {
+        display: grid;
+        position: absolute;
+        right:4%;
+        top: -9%;
+        transition: 0.3s;
+        background-color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        border-radius: 0px 0px 10px 10px;
+        color: white;
+    }
+
+    #navmobile {
+        display: block;
+        gap: 20px;
+    }
+}
+
+#home {
+    display: flex;
+}
+
+
+#home > article {
+    display: flex;
+    flex-direction: column;
+}
+
+#home > article > h1 {
+    font-family: almarai;
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: 5vw;
+    max-width: 42;
+    margin-bottom: 20px;
+}
+
+
+p {
+    font-family: alike;
+    font-size: 1vw;
+    max-width: 35vw;
+    color: #525252;
+    margin-bottom: 30px;;
+}
+
+
+
+#home > article > a { 
+    text-align: center;
+    font-family: almarai;
+    font-size: 1.2vw;
+    color: #ffffff;
+    background-color: black;
+    width: 200px;
+    padding: 15px 40px;
+    border-radius: 999px; 
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+#quali {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#quali > div > h1 {
+    font-family: alike;
+    font-size: 2.3rem;
+}
+
+@media (max-width: 790px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home > article > h1 {
+        font-size: 9vw;
+        line-height: 9vw;
+    }
+
+    #home > article > p {
+        font-size: 4vw;
+        max-width: 100%;
+    }
+
+    #home > article > a { 
+        font-size: 4vw;
+        width: 100%;
+        padding: 15px 0;
+    }
+    
+    #quali {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #quali > :nth-child(3) {
+        grid-column: 1 / -1;      /* 1ª até última coluna */
+        justify-self: center;     /* centraliza o próprio item */
+    }
+
+    #quali > div > h1 {
+        font-size: 5vw;
+
+    }
+}
+
+#home > img {
+    width: 50%;
+}
+
+@media (max-width: 790px) {
+    #home > img {
+        width: 100%;
+    }
+}
+
+#adMarca {
+    background-color: black;
+}
+
+#Marca {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#Marca > h1 {
+    color: white;
+    font-family: anek telugu;
+    padding-top: 15px;
+}
+
+#Lancamentos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#Lancamentos > h1 {
+    font-family: anek telugu;
+    text-align: center ;
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Container dos cards */
+#AnunLancameto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 16px;
+    font-family: alike;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.233);
+    transition: transform 0.2s;
+    max-width: 300px;
+    margin:auto ;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    background: #eaeaea;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-family: alike;
+}
+
+.estrela {
+    color: gold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.score {
+    color: #333;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    background: #eaeaea;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-family: alike;
+}
+
+.estrela {
+    color: gold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.score {
+    color: #333;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.verMais {
+    text-align: center;
+    max-width: 25%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px #03020246;
+}
+
+.verMais > a {
+    font-size: 1em;
+}
+
+
+@media (max-width: 1024px) {
+    #AnunLancameto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #Lancamentos > h1 {
+        font-size: 5vw;
+    }
+
+    #AnunLancameto {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .verMais {
+        max-width: 40%;
+    }
+
+    .verMais > a {
+        font-size: 1.2rem;
+        
+    }
+}
+
+
+hr {
+    margin: auto;
+    width: 80%;
+}
+
+#Destaques {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#Destaques > h1 {
+    font-family: anek telugu;
+    text-align: center ;
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Container dos cards */
+#AnunDesteques {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 16px;
+    font-family: alike;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.233);
+    transition: transform 0.2s;
+    max-width: 300px;
+    margin:auto ;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    background: #eaeaea;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-family: alike;
+}
+
+.estrela {
+    color: #cab125;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.score {
+    color: #333;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    background: #eaeaea;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 12px;
+}
+
+.card-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.dados {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    font-family: alike;
+}
+
+.estrela {
+    color: #cab125;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.score {
+    color: #333;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+#seuEstiloDesk {
+    text-align: center;;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+    #AnunDesteques {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    #Destaques > h1 {
+        font-size: 5vw;
+    }
+
+    #AnunDesteques {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+#seuEstiloDesk > h1 {
+    font-family: anek telugu;
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#seuEstiloDesk > #top {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#seuEstiloDesk > #bottom {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#seuEstiloDesk > div > a > img{
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.253);
+    max-height: 20vw;
+} 
+
+#seuEstiloMob {
+    display: none;
+}
+
+@media (max-width: 790px) {
+    #seuEstiloDesk {
+        display: none;
+    }
+
+    #seuEstiloMob {
+        display: block;
+        text-align: center;;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    #seuEstiloMob > h1 {
+        font-family: anek telugu;
+        font-size: 5vw;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+
+    #seuEstiloMob > div > a > img{
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.253);
+        max-height: 100%;
+    } 
+}
+
+
+#feedbacks {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#feedbacks > h1 {
+    font-family: anek telugu;
+    text-align: center ;
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#feedbacks > #navegacao {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin: 15px;
+}
+
+#feedbacks > #navegacao > i {
+    padding: 10px;
+}
+
+#cardsfeed {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#cardsfeed > .cardfeed {
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.233);
+    padding: 20px;
+}
+
+.cardfeed > h3 {
+    font-family: alike;
+    font-size: 1.3vw;
+    margin: 10px;
+}
+
+.cardfeed > p {
+    font-family: alike;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+@media (max-width: 790px) {
+    #feedbacks > h1 {
+        font-family: anek telugu;
+        text-align: center ;
+        font-size: 5vw;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    
+    #feedbacks > #navegacao {
+        justify-content: space-between;
+    }
+
+    #cardsfeed {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cardfeed {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .cardfeed > h3 {
+        font-family: alike;
+        font-size: 5vw;
+        margin: 10px;
+    }
+
+    .cardfeed > .estrela {
+        color: #cab125;
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+        margin: 0px 0px 0px 10px;
+    }
+
+    .cardfeed > p {
+        max-width: 95%;
+    }
+
+}
+
+#assinatura {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+}
+
+#assinatura > div {
+    margin: 0px 40px;
+}
+
+#assinatura > #callToAction > h1 {
+    font-family: anek telugu;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    padding-top: 15px; /*15px para compensar o empacamentos a baixo da linha da fonte e conseguir alinhar o texto horizontalmente em relação a caixa do elemento*/
+    max-width: 60%;
+}
+
+#assinatura > #inputAssinar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+#assinatura > #inputAssinar > input {
+    height: 42px;
+}
+
+#assinatura > #inputAssinar  > div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 999px;
+    height: 46px;
+}
+
+#assinatura > #inputAssinar  > div > i {
+    color: gray;
+    margin-right: -20px;
+    margin: 5px;
+}
+
+#assinatura > #inputAssinar  > div > input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+
+    border-radius: 999px; 
+    font-size: 1.2rem;
+    height: 42px;
+}
+
+#assinatura > #inputAssinar > input {
+    background-color: white;
+    color: black;
+    font-family: almarai;
+    font-size: 1.2vw;
+    border-radius: 999px; 
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 790px) {
+    #assinatura {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    #assinatura > div {
+        margin: 0px 0px;
+    }
+
+    #assinatura > #callToAction > h1 {
+        font-family: anek telugu;
+        font-size: 2.3em;
+        line-height: 2.3rem;
+        padding-top: 15px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #assinatura > #inputAssinar {
+        width: 100%;
+    }
+
+    #assinatura > #inputAssinar > input {
+        font-size: 4vw;
+    }
+}
+
+footer {
+    max-width: 80%;
+    margin: auto;
+}
+
+#footerTop {
+    display: flex;
+    justify-content: center;
+}
+
+/* defini que a primeira div filho do footerTop vai ocupar 35% da largura da tela*/ 
+#footerTop > div:first-child {
+    flex: 0 0 35%;
+}
+
+/* defini que todas as div filho do footerTop que não é a primeira vão ter a largura igualmente divida na largura que sobrou, ou seja, cada uma ocupando aproximandamente 21.6% dos 65% que sobraram */
+#footerTop > div:not(:first-child) {
+    flex: 1;
+}
+
+#footerTop > #social > h1 {
+    font-family: anek telugu;
+    font-size: 30pt;
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+#footerTop > #social > p {
+    width: 65%;;
+}
+
+#footerTop > #social > ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 50px;
+}
+
+#footerTop > #social > ul > li > a > i {
+    font-size: 1.5vw;
+    color: black;
+}
+
+#footerTop > div > h1 {
+    font-family: almarai;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+#footerTop > div > ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#footerTop > div > ul > li {
+    font-family: alike;
+    margin: 20px 0;
+}
+
+#footerTop > div > ul > li > a {
+    font-family: alike;
+    font-size: 1rem;
+    color: rgb(95, 94, 94);
+}
+
+footer > hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 790px) {
+    #footerTop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    #footerTop > div:first-child {
+        grid-column: 1 / -1; /* a primeira div irá ocupar 1 primeira e ultima linha (-1 significar sempre a última, independente de quantas tiverem)*/
+    }
+
+    #footerTop > #social > h1 {
+        font-size: 3rem;
+    }
+
+    #footerTop > #social > p {
+        font-size: 1rem;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    #footerTop > #social > ul {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    #footerTop > #social > ul > li > a > i {
+        font-size: 1.9rem;
+    }
+
+    #footerTop > div > h1 {
+        font-size: 1.4rem;
+    }
+
+    footer > hr {
+        border: 1px solid gray;
+
+    }
+
+    #foterbottom > p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
