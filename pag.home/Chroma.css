@@ -6,6 +6,78 @@
     padding: 0;
 }
 
+body {
+    transition: background 0.3s, color 0.3s;
+    background: white;
+    color: black;
+  }
+
+  body.dark {
+    background: black;
+    color: white;
+  }
+
+  .dark h1,
+  .dark ul,
+  .dark li,
+  .dark a {
+    color: white;
+  }
+
+    .dark #adMarca {
+        background-color: white;
+    }
+
+    .dark #logo {
+        color: black;
+    }
+
+    .dark #comprarAgora {
+        background-color: white;
+        color: black;
+    }
+
+   .dark i {
+    color: white;
+   }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    transition: color 0.4s;
+  }
+
+  .dark .theme-toggle {
+    color: white;
+  }
+
+  .theme-toggle svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+.cardfeed.dark {
+    background-color: white;
+    color: black;
+}
+
+body.dark .verMais {
+    background-color: white;
+  }
+
+body.dark .verMais > a {
+    color: black;
+}
+
+body.dark ul li i {
+    color: white; /* Cor branca no modo escuro */
+    background-color: white;
+  }
+
 /*Limitando a largura dos containers principais a 80% da tela e alinhando horizontalmete independente da largura da tela*/
 section , header {
     max-width: 80%;
@@ -26,6 +98,7 @@ a {
     padding: 5px;
     padding: 10px;
 }
+
 
 /*carcteristica padrão de todos os links dentro da promo*/
 #promo > a {
@@ -400,7 +473,9 @@ p {
     margin-top: 30px;
     border-radius: 20px;
     box-shadow: 2px 4px 10px #03020246;
+    background-color: transparent;
 }
+
 
 .verMais > a {
     font-size: 1em;
@@ -681,18 +756,21 @@ hr {
     border-radius: 20px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.233);
     padding: 20px;
+    background-color: white !important;
 }
 
 .cardfeed > h3 {
     font-family: alike;
     font-size: 1.3vw;
     margin: 10px;
+    color: black;
 }
 
 .cardfeed > p {
     font-family: alike;
     font-size: 1rem;
     margin: 10px;
+    color: black !important;
 }
 
 @media (max-width: 790px) {
@@ -845,6 +923,10 @@ footer {
     max-width: 80%;
     margin: auto;
 }
+
+.dark ul li i {
+    color: white;
+  }
 
 #footerTop {
     display: flex;
