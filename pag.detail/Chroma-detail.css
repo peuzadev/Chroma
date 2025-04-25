@@ -55,7 +55,7 @@ p {
     align-items: center;
 }
 
-#navLeft > #logo {
+#navLeft > a > #logo {
     font-family: anek telugu;
     font-size: 30pt;
     font-weight: 900;
