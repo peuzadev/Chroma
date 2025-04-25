@@ -12,9 +12,7 @@ a {
 }
 
 body {
-    height: 100vh;
     display: flex;
-    height: 100vh;
     margin: 0;
     overflow: hidden; /* bloqueia rolagem */
 }
@@ -73,6 +71,27 @@ input {
     font-family: almarai;
     font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+}
+
 
 
 
