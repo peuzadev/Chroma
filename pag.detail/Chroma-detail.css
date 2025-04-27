@@ -48,7 +48,10 @@ body.dark {
     height: 100%;
     fill: currentColor;
 }
-
+body.dark #tamAtivo {
+    background-color: #555;
+    color: #fff;
+}
 body.dark #quantidade button i  {
     color: white; 
 }
@@ -442,8 +445,8 @@ p {
 }
 
 .tamAtivo {
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 #addcart {
@@ -472,7 +475,38 @@ p {
     color: black;
     width: 40%;
 }
+body.dark a {
+    color: #fff;
+}
 
+body.dark #assinatura h1 {
+    color: rgb(0, 0, 0);
+}
+body.dark #assinatura {
+    background-color: rgb(255, 255, 255);
+}
+body.dark #addcart > input {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    font-family: almarai;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    height: 50px;
+    border-radius: 999px;
+}
+body.dark #assinatura > #inputAssinar > input {
+    background-color: black;
+    height: 42px;
+    color: white;
+}
+body.dark #assinar {
+    background-color: rgb(255, 255, 255);
+}
 #addcart > input {
     text-align: center;
     background-color: transparent;
