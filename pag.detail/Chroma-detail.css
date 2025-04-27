@@ -16,55 +16,55 @@ body {
     transition: background 0.3s, color 0.3s;
     background: white;
     color: black;
-  }
+}
 
-  body.dark {
+body.dark {
     background: black;
     color: white;
-  }
+}
 
-  .dark h1,
-  .dark ul,
-  .dark li,
-  .dark a {
+.dark h1,
+.dark ul,
+.dark li,
+.dark a {
     color: white;
-  }
+}
 
-  .theme-toggle {
+.theme-toggle {
     background: none;
     border: none;
     cursor: pointer;
     width: 40px;
     height: 30px;
     transition: color 0.4s;
-  }
+}
 
-  .dark .theme-toggle {
+.dark .theme-toggle {
     color: white;
-  }
+}
 
-  .theme-toggle svg {
+.theme-toggle svg {
     width: 100%;
     height: 100%;
     fill: currentColor;
-  }
+}
 
-  body.dark #quantidade button i  {
+body.dark #quantidade button i  {
     color: white; 
-  }
+}
 
-  body.dark ul li i {
+body.dark ul li i {
     color: white; /* Cor branca no modo escuro */
     background-color: white;
-  }
+}
 
 /* Estilizando o input de número no modo escuro */
 body.dark #quantidade input {
     color: white !important; /* Cor do valor do número no input no modo escuro */
     background-color: #555; /* Fundo escuro do input */
     border: 1px solid #777; /* Borda do input no modo escuro */
-  }
-  
+}
+
 /*caracteristica padrão dos links*/
 a {
     text-decoration: none;
@@ -169,19 +169,11 @@ p {
 /*Nav Mobile*/
 @media (max-width: 790px) {
 
-    /* Quado a ul tiver a classe open */
-    #navLeft > .open {
-        display: grid;
-        position: absolute;
-        right:4%;
-        top: 6%;
-        transition: 0.3s;
+    /*icone de menu mobile*/
+    #navmobile {
+        display: block;
+        gap: 20px;
     }
-
-    #navLeft > ul > li > a {
-        color: white;
-    }
-
 
     /* Quado a ul não tiver a classe open */
     #navLeft > ul {
@@ -196,10 +188,17 @@ p {
         color: white;
     }
 
-    #navmobile {
-        display: block;
-        gap: 20px;
+    /* Quado a ul tiver a classe open */
+    .open {
+        right:4%;
+        top: 6%;
     }
+
+    #navLeft > ul > li > a {
+        color: white;
+    }
+
+    
 }
 
 
@@ -328,7 +327,7 @@ p {
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
-    position: relative;
+    position: relative; 
 }   
 
 #cor01 {
@@ -460,7 +459,6 @@ p {
     font-size: 1.3rem;
     cursor: pointer;
     color: black;
-
 }
 
 #addcart > #quantidade > input{

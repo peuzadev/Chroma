@@ -17,9 +17,11 @@
     <header>
         <div id="nav">
             <div id="navLeft">
-                <h1 id="logo">
-                    CHROMA
-                </h1>
+                <a href="../pag.home/chroma.html">
+                    <h1 id="logo">
+                        CHROMA
+                    </h1>
+                </a>
                 <ul id="navbar" >
                     <li><a href="#">Comprar</a></li>
                     <li><a href="#">Lancamentos</a></li>
@@ -41,9 +43,9 @@
                 </a>
                 <button class="theme-toggle" id="toggleTheme" aria-label="Trocar tema">
                     <svg id="icon" viewBox="0 0 24 24">
-                      <path d="M12 4.5a1 1 0 0 1 1 1v1.1a1 1 0 0 1-2 0v-1.1a1 1 0 0 1 1-1Zm6.36 1.64a1 1 0 0 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41-1.41l.78-.78ZM19.5 11a1 1 0 1 1 0 2h-1.1a1 1 0 1 1 0-2h1.1ZM6.34 6.14a1 1 0 1 1 1.41 1.41l-.78.78A1 1 0 1 1 5.56 6.9l.78-.76ZM4.5 11a1 1 0 0 1 0 2H3.4a1 1 0 0 1 0-2h1.1Zm1.86 7.36a1 1 0 0 1-1.41-1.41l.78-.78a1 1 0 0 1 1.41 1.41l-.78.78Zm5.64 1.14a1 1 0 0 1-1-1v-1.1a1 1 0 0 1 2 0v1.1a1 1 0 0 1-1 1Zm7.36-1.64a1 1 0 0 1-1.41 1.41l-.78-.78a1 1 0 0 1 1.41-1.41l.78.78ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/>
+                        <path d="M12 4.5a1 1 0 0 1 1 1v1.1a1 1 0 0 1-2 0v-1.1a1 1 0 0 1 1-1Zm6.36 1.64a1 1 0 0 1 1.41 1.41l-.78.78a1 1 0 0 1-1.41-1.41l.78-.78ZM19.5 11a1 1 0 1 1 0 2h-1.1a1 1 0 1 1 0-2h1.1ZM6.34 6.14a1 1 0 1 1 1.41 1.41l-.78.78A1 1 0 1 1 5.56 6.9l.78-.76ZM4.5 11a1 1 0 0 1 0 2H3.4a1 1 0 0 1 0-2h1.1Zm1.86 7.36a1 1 0 0 1-1.41-1.41l.78-.78a1 1 0 0 1 1.41 1.41l-.78.78Zm5.64 1.14a1 1 0 0 1-1-1v-1.1a1 1 0 0 1 2 0v1.1a1 1 0 0 1-1 1Zm7.36-1.64a1 1 0 0 1-1.41 1.41l-.78-.78a1 1 0 0 1 1.41-1.41l.78.78ZM12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/>
                     </svg>
-                  </button>
+                </button>
             </div>
             
         </div>
@@ -108,10 +110,12 @@
             </div>
             <div id="addcart">
                 <div id="quantidade">
-                    <button id="menos"><i class="fa-solid fa-minus"></i>
+                    <button id="menos">
+                        <i class="fa-solid fa-minus"></i>
                     </button>
                     <input type="number" min="1" value="1" id="qntd">
-                    <button id="mais"><i class="fa-solid fa-plus"></i>
+                    <button id="mais">
+                        <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
                 <input type="button" value="Adicionar ao Carrinho" id="addCarrinho" onclick="atualizarPreco()">

@@ -65,15 +65,15 @@ var qntd = document.getElementById("qntd").value
 const mais = document.getElementById("mais")
 const menos = document.getElementById("menos")
 
+var num = 1
+
 mais.addEventListener("click", () => {
     qntd++
-    document.getElementById("qntd").value = qntd
 })
 
 menos.addEventListener("click", () => {
     if (qntd > 1) {
-        qntd--;
-        document.getElementById("qntd").value = qntd;
+        qntd--
     }
 })
 
@@ -94,6 +94,7 @@ img2.addEventListener("click", () => {
 img3.addEventListener("click", () => {
     imgPrincipal.src = img3.src;
 })
+
 
 //troca tema
 const btn = document.getElementById("toggleTheme");
