@@ -80,7 +80,6 @@ body.dark ul li i {
 
 body.dark #footerTop > #social > ul > li > a > i {
     color: white; /* Cor branca no modo escuro */
-
 }
 
 /*Limitando a largura dos containers principais a 80% da tela e alinhando horizontalmete independente da largura da tela*/
