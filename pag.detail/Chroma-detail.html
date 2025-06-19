@@ -35,7 +35,7 @@
             
             <div id="navRigth">
                 <i class="fa-solid fa-bars" id="navmobile"></i>
-                <a href="#">
+                <a href="#" id="icone-carrinho">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
                 <a href="#">
@@ -74,55 +74,57 @@
             </div>
         </aside>
 
-        <aside id="dadosProduto">
-            <h1>T-shirt Tape Details</h1>
-            <div id="dados">
-                <span class="estrela">★★★★☆</span>
-                <span class="score">4/5</span>
+       <aside id="dadosProduto" 
+       data-id="1" data-nome="T-shirt Tape Details" 
+       data-preco="120.00"> <h1>T-shirt Tape Details</h1>
+    <div id="dados">
+        <span class="estrela">★★★★☆</span>
+        <span class="score">4/5</span>
+    </div>
+    <h1 id="precoCamisa">R$120</h1> <p>
+    Esta graphic t-shirt é perfeita para qualquer ocasião. Confeccionada em tecido
+    macio e respirável, oferece conforto e estilo superiores
+    </p>
+    <div id="cores">
+        <p>Seleciones as Cores</p>
+        <div id="coresDisponiveis">
+            <div id="cor1" class="opcao-cor active" data-cor="Preto"> <div id="cor01"></div>
             </div>
-            <h1 id="precoCamisa">R$120</h1>
-            <p>
-            Esta graphic t-shirt é perfeita para qualquer ocasião. Confeccionada em tecido
-            macio e respirável, oferece conforto e estilo superiores
-            </p>
-            <div id="cores">
-                <p>Seleciones as Cores</p>
-                <div id="coresDisponiveis">
-                    <div id="cor1">
-                        <div id="cor01"></div>
-                    </div>
-                    <div id="cor2">
-                        <div id="cor02"></div>
-                    </div>
-                    <div id="cor3">
-                        <div id="cor03"></div>
-                    </div>
-                </div>
+            <div id="cor2" class="opcao-cor" data-cor="Branco"> <div id="cor02"></div>
             </div>
-            <div id="tamanho">
-                <p>Escolha o tamanho</p>
-                <div id="tamDisponiveis">
-                    <p id="tamP">P</p>
-                    <p id="tamM">M</p>
-                    <p id="tamG">G</p>
-                    <p id="tamGG">GG</p>
-                </div>
+            <div id="cor3" class="opcao-cor" data-cor="Cinza"> <div id="cor03"></div>
             </div>
-            <div id="addcart">
-                <div id="quantidade">
-                    <button id="menos">
-                        <i class="fa-solid fa-minus"></i>
-                    </button>
-                    <input type="number" min="1" value="1" id="qntd">
-                    <button id="mais">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
-                <input type="button" value="Adicionar ao Carrinho" id="addCarrinho" onclick="atualizarPreco()">
-            </div>
-        </aside>
+        </div>
+    </div>
+    <div id="tamanho">
+        <p>Escolha o tamanho</p>
+        <div id="tamDisponiveis">
+            <p id="tamP" class="opcao-tamanho" data-tamanho="P">P</p> <p id="tamM" class="opcao-tamanho active" data-tamanho="M">M</p> <p id="tamG" class="opcao-tamanho" data-tamanho="G">G</p>
+            <p id="tamGG" class="opcao-tamanho" data-tamanho="GG">GG</p>
+        </div>
+    </div>
+    <div id="addcart">
+        <div id="quantidade">
+            <button id="menos">
+                <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="number" min="1" value="1" id="qntd">
+            <button id="mais">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <input type="button" value="Adicionar ao Carrinho" id="addCarrinho"> 
+    </div>
+</aside>
     </section>
-
+<div id="carrinho-flutuante">
+    <h2><i class="fa-solid fa-cart-shopping"></i> Seu Carrinho</h2>
+    <ul id="carrinho-lista">
+        </ul>
+    <p id="carrinho-total">Total: R$ 0,00</p>
+    <button id="fechar-carrinho">Continuar Comprando</button>
+    <button id="finalizar-compra">Finalizar Compra</button>
+</div>
     <section id="assinatura">
         <div id="callToAction">
             <h1>
